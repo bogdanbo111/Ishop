@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <nav class="menu">
+            <button class="menu__btn">
+                <div class="menu__btn-line"></div>
+                <div class="menu__btn-line"></div>
+                <div class="menu__btn-line"></div>
+            </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Магазины</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Доставка и оплата</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="index.html" class="logo">
+            <img src="images/mobile-alt.svg" width="80" height="80" alt="" class="logo__img">
+        </a>
+        <div class="header__box">
+          <p class="header__address">
+            Киев,  ул. Шевченко  167
+          </p>
+          <ul class="user-list">
+            <li class="user-list__item"><a href="#" class="user-list__link">
+              <img src="images/heart.svg" alt="">
+            </a></li>
+            <li class="user-list__item"><a href="#" class="user-list__link">
+              <img src="images/user.svg" alt="">
+            </a></li>
+            <li class="user-list__item basket"><a href="#" class="user-list__link">
+              <img src="images/basket.svg" alt="">
+            </a>
+            <p class="basket__num">1</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <ul class="menu-mobile__list">
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <img class="menu-mobile__img" src="images/user.svg" alt="">
+                <p>Войти</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <img class="menu-mobile__img" src="images/user.svg" alt="">
+                <p>Регистрация</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <img class="menu-mobile__img" src="images/heart.svg" alt="">
+                <p>Избранное</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <img class="menu-mobile__img" src="images/basket.svg" alt="">
+                <p>Корзина</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <img class="menu-mobile__img" src="images/house.svg" alt="">
+                <p>Магазины</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <img class="menu-mobile__img" src="images/percent.svg" alt="">
+                <p>Акции</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <img class="menu-mobile__img" src="images/box.svg" alt="">
+                <p>Доставка и оплата</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <p>Телефоны</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <p>Ноутбуки</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <p>Акустика</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <p>Наушники</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <p>Часы</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <p>Электротранспорт</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <p>Аксессуары</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <p>Запчасти</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">
+                <img class="menu-mobile__img" src="images/adress-icon.svg" alt="">
+                <p>Киев,  ул. Шевченко  167</p>
+            </a>
+        </li>
+    </ul>
+
+    <div class="menu__mobile-linewrapper">
+        <ul class="menu__mobile-line">
+            <li class="menu__item">
+                <a href="catalog.html" class="menu__link">Магазины</a>
+            </li>
+            <li class="menu__item">
+                <a href="product-page.html" class="menu__link">Акции</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Доставка и оплата</a>
+            </li>
+        </ul>
+    </div>
+
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <ul class="menu-categories">
+          <li class="menu-categories__item">
+            <a href="catalog.html" class="menu-categories__link">
+            Телефоны
+          </a></li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">
+              Ноутбуки
+          </a></li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">
+              Акустика
+          </a></li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">
+              Наушники
+          </a></li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">
+              Часы
+          </a></li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">
+              Электротранспорт
+          </a></li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">
+              Аксессуары
+          </a></li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">
+              Запчасти
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="banner-section">
+  <div class="container">
+    <div class="banner-section__inner">
+      <div class="banner-section__slider">
+        <a class="banner-section__slider-item" href="#">
+          <img class="banner-section__slider-img" src="images/banner-slider.jpg" width="870" height="400" alt="">
+        </a>
+        <a class="banner-section__slider-item" href="#">
+          <img loading="lazy" class="banner-section__slider-img" src="images/banner-slider1.jpg" width="680" height="454" alt="">
+        </a>
+        <a class="banner-section__slider-item" href="#">
+          <img loading="lazy" class="banner-section__slider-img" src="images/banner-slider2.jpg" width="680" height="417" alt="">
+        </a>
+        <a class="banner-section__slider-item" href="#">
+          <img loading="lazy" class="banner-section__slider-img" src="images/banner-slider3.jpg" width="680" height="425" alt="">
+        </a>
+        <a class="banner-section__slider-item" href="#">
+          <img loading="lazy" class="banner-section__slider-img" src="images/banner-slider4.jpg" width="680" height="425" alt="">
+        </a>
+        <a class="banner-section__slider-item" href="#">
+          <img loading="lazy" class="banner-section__slider-img" src="images/banner-slider1.jpg" width="680" height="454" alt="">
+        </a>
+      </div>
+      <a class="banner-section__item sale-item" href="#">
+        <div class="sale-item__top">
+          <div class="sale-item__info">
+            акция
+          </div>
+          <div class="sale-item__price">
+            <div class="price sale-item__price-new">7 000 ₴</div>
+            <div class="price sale-item__price-old">9 500 ₴</div>
+          </div>
+        </div>
+        <img src="images/content/sale-2.jpg" alt="" class="sale-item__img" width="265" height="265">
+        <h5 class="sale-item__title">
+            Смартфон realme C3 3/64GB Red
+        </h5>
+        <div class="sale-item__footer">
+          Акция действует до
+          <span>31.08.2021 </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="search">
+  <div class="container">
+    <div class="search-inner">
+      <div class="search__tabs tabs-wrapper">
+          <div class="mobile-overflow">
+              <a href="#tab-1" class="tab search__tabs-item tab-active">Поиск по категории</a>
+              <a href="#tab-2" class="tab search__tabs-item">Поиск по коду товара</a>
+              <a href="#tab-3" class="tab search__tabs-item">Поиск по названию товара</a>
+          </div>
+      </div>
+      <div class="search__content">
+        <div id="tab-1" class="tabs-content search__content-item tabs-content--active">
+          <form action="" class="search__content-form">
+            <input type="text" class="search__content-input" placeholder="Введите категорию">
+            <button class="search__content-btn" type="submit">искать</button>
+          </form>
+        </div>
+        <div id="tab-2" class="tabs-content search__content-item">
+          <form action="" class="search__content-form">
+            <input type="text" class="search__content-input" placeholder="Введите код товара">
+            <button class="search__content-btn" type="submit">искать</button>
+          </form>
+        </div>
+        <div id="tab-3" class="tabs-content search__content-item">
+          <form action="" class="search__content-form">
+            <input type="text" class="search__content-input" placeholder="Введите название товара">
+            <button class="search__content-btn" type="submit">искать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="categories">
+  <div class="container">
+    <div class="categories__inner">
+      <a href="#" class="categories__item">
+        <div class="categories__item-info">
+          <h4 class="categories__item-title">Телефоны</h4>
+          <p class="categories__item-text">Подробнее</p>
+        </div>
+        <div class="categories__item-img">
+          <img loading="lazy" src="images/content/categories-1.jpg" width="265" height="265" alt="">
+        </div>
+      </a>
+      <a href="#" class="categories__item">
+        <div class="categories__item-info">
+          <h4 class="categories__item-title">Ноутбуки</h4>
+          <p class="categories__item-text">Подробнее</p>
+        </div>
+        <div class="categories__item-img">
+          <img loading="lazy" src="images/content/categories-2.jpg" width="250" height="250" alt="">
+        </div>
+      </a>
+      <a href="#" class="categories__item">
+        <div class="categories__item-info">
+          <h4 class="categories__item-title">Акустика</h4>
+          <p class="categories__item-text">Подробнее</p>
+        </div>
+        <div class="categories__item-img">
+          <img loading="lazy" src="images/content/categories-3.jpg" width="265" height="265" alt="">
+        </div>
+      </a>
+      <a href="#" class="categories__item">
+        <div class="categories__item-info">
+          <h4 class="categories__item-title">Наушники</h4>
+          <p class="categories__item-text">Подробнее</p>
+        </div>
+        <div class="categories__item-img">
+          <img loading="lazy" src="images/content/categories-4.jpg" width="265" height="265" alt="">
+        </div>
+      </a>
+      <a href="#" class="categories__item">
+        <div class="categories__item-info">
+          <h4 class="categories__item-title">Часы</h4>
+          <p class="categories__item-text">Подробнее</p>
+        </div>
+        <div class="categories__item-img">
+          <img loading="lazy" src="images/content/categories-5.jpg" width="680" height="680" alt="">
+        </div>
+      </a>
+      <a href="#" class="categories__item">
+        <div class="categories__item-info">
+          <h4 class="categories__item-title">Электро&shy;транспорт</h4>
+          <p class="categories__item-text">Подробнее</p>
+        </div>
+        <div class="categories__item-img">
+          <img loading="lazy" src="images/content/categories-6.jpg" width="265" height="265" alt="">
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="products">
+    <div class="container">
+        <div class="products__inner">
+            <h3 class="products__title">
+                Популярные товары
+            </h3>
+            <div class="tabs-wrapper">
+                <div class="tabs products__tabs mobile-overflow">
+                    <a href="#product-tab1" class="tab tab-active products__tab">
+                        телефоны
+                    </a>
+                    <a href="#product-tab2" class="tab products__tab">
+                        квадрокоптеры
+                    </a>
+                    <a href="#product-tab3" class="tab products__tab">
+                        bluetooth гарнитуры
+                    </a>
+                    <a href="#product-tab4" class="tab products__tab">
+                        экшн-камеры
+                    </a>
+                    <a href="#product-tab5" class="tab products__tab">
+                        инструменты
+                    </a>
+                    <a href="#product-tab6" class="tab products__tab">
+                        аксессуары
+                    </a>
+                </div>
+            </div>
+                <div class="tabs-container products__container">
+                    <div id="product-tab1" class="tabs-content products__content tabs-content--active">
+                        <div class="product-slider">
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper">
+                                    <a href="#" class="product-item ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-1.jpg" alt="" class="product-item__img">
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+
+                                            <h4 class="product-item__title">
+                                                Смартфон Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                            </h4>
+                                            <p class="price product-item__price">
+                                                9 800 ₴
+                                            </p>
+
+                                            <p class="product-item__notify-text">
+                                                нет в наличии
+                                            </p>
+
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                       <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper product-item__not-available">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-2.jpg" alt="" class="product-item__img">
+
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+
+
+                                            <h4 class="product-item__title">
+                                                Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                            </h4>
+                                            <p class="price product-item__price">
+                                                9 800 ₴
+                                            </p>
+                                            <p class="product-item__notify-text">
+                                                нет в наличии
+                                            </p>
+
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/sale-2.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper product-item__not-available">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-2.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-3.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper product-item__not-available">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-4.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-5.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="product-tab2" class="tabs-content products__content">
+                        <div class="product-slider">
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper">
+                                    <a href="#" class="product-item ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-6.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-2.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper product-item__not-available">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-3.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-4.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper product-item__not-available">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-5.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-1.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="product-tab3"  class="tabs-content products__content">
+                        slider-3
+                    </div>
+                    <div id="product-tab4"  class="tabs-content products__content">
+                        slider-4
+                    </div>
+                    <div id="product-tab5"  class="tabs-content products__content">
+                        slider-5
+                    </div>
+                    <div id="product-tab6"  class="tabs-content products__content">
+                        slider-6
+                    </div>
+                </div>
+            <div class="product__more">
+                <a href="#" class="product__more-link">
+                    Показать еще
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="banner">
+    <div class="container">
+        <a href="#" class="banner__link">
+            <img loading="lazy" src="images/banner.jpg" alt="">
+        </a>
+        <a href="#" class="banner__link-mobile">
+            <img loading="lazy" src="images/banner-mobile.jpg" alt="">
+        </a>
+    </div>
+</div>
+
+
+<section class="products">
+    <div class="container">
+        <div class="products__inner">
+            <h3 class="products__title">
+                С этим товаром покупают
+            </h3>
+            <div class="tabs-wrapper">
+                <div class="tabs products__tabs mobile-overflow">
+                    <a href="#product-tab1" class="tab tab-active products__tab">
+                        телефоны
+                    </a>
+                    <a href="#product-tab2" class="tab products__tab">
+                        квадрокоптеры
+                    </a>
+                    <a href="#product-tab3" class="tab products__tab">
+                        bluetooth гарнитуры
+                    </a>
+                    <a href="#product-tab4" class="tab products__tab">
+                        экшн-камеры
+                    </a>
+                    <a href="#product-tab5" class="tab products__tab">
+                        инструменты
+                    </a>
+                    <a href="#product-tab6" class="tab products__tab">
+                        аксессуары
+                    </a>
+                </div>
+            </div>
+                <div class="tabs-container products__container">
+                    <div id="popular-tab1" class="tabs-content products__content tabs-content--active">
+                        <div class="product-slider">
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper">
+                                    <a href="#" class="product-item ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-1.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/sale-2.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper product-item__not-available">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-2.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-3.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper product-item__not-available">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-4.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-5.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="popular-tab2" class="tabs-content products__content">
+                        <div class="product-slider">
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper">
+                                    <a href="#" class="product-item ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-6.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-2.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper product-item__not-available">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-3.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-4.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper product-item__not-available">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-5.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            Xiaomi Redmi Note 10 4/64GB Onyx Gray
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-item__wrapper ">
+                                    <a href="#" class="product-item product-item--sale ">
+                                        <p class="product-item__hover-text">
+                                            посмотреть товар
+                                        </p>
+                                        <button class="product-item__favorite"></button>
+                                        <img src="images/content/product-1.jpg" alt="" class="product-item__img">
+                                        <h4 class="product-item__title">
+                                            realme C3 3/64GB Red
+                                        </h4>
+                                        <p class="price product-item__price">
+                                            9 800 ₴
+                                        </p>
+                                        <button class="product-item__basket">
+                                            <img src="images/basket-white.svg" alt="">
+                                        </button>
+                                        <p class="product-item__notify-text">
+                                            нет в наличии
+                                        </p>
+                                    </a>
+                                    <a href="#" class="product-item__notify-link">
+                                        <span>Сообщить о поступлении</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="popular-tab3"  class="tabs-content products__content">
+                        slider-3
+                    </div>
+                    <div id="popular-tab4"  class="tabs-content products__content">
+                        slider-4
+                    </div>
+                    <div id="popular-tab5"  class="tabs-content products__content">
+                        slider-5
+                    </div>
+                    <div id="popular-tab6"  class="tabs-content products__content">
+                        slider-6
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__top-inner">
+                <div class="footer__top-item footer__top-newslatter">
+                    <h6 class="footer__top-title">
+                        Подпишитесь на нашу рассылку
+                        и узнавайте о акциях  быстрее
+                    </h6>
+                    <form action="" class="footer-form">
+                        <input type="text" class="footer-form__input" placeholder="Введите ваш e-mail:">
+                        <button type="submit" class="footer-form__btn">Отправить</button>
+                    </form>
+                </div>
+                <div class="footer__top-item">
+                    <h6 class="footer__top-title footer__topdrop">
+                        Информация
+                    </h6>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="#">О компании</a></li>
+                        <li class="footer-list__item">
+                            <a href="#">Контакты</a></li>
+                        <li class="footer-list__item">
+                            <a href="#">Акции</a></li>
+                        <li class="footer-list__item">
+                            <a href="#">Магазины</a></li>
+                    </ul>
+                </div>
+                <div class="footer__top-item">
+                    <h6 class="footer__top-title footer__topdrop">
+                        Интернет-магазин
+                    </h6>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="#">Доставка и самовывоз</a></li>
+                        <li class="footer-list__item">
+                            <a href="#">Оплата</a></li>
+                        <li class="footer-list__item">
+                            <a href="#">Возврат-обмен</a></li>
+                        <li class="footer-list__item">
+                            <a href="#">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer__top-item footer__top-social">
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="#">
+                                <img src="images/instagram.svg" alt="">
+                        </a></li>
+                        <li class="social-list__item">
+                            <a href="#">
+                                <img src="images/vk.svg" alt="">
+                        </a></li>
+                        <li class="social-list__item">
+                            <a href="#">
+                                <img src="images/facebook.svg" alt="">
+                        </a></li>
+                        <li class="social-list__item">
+                            <a href="#">
+                                <img src="images/youtube.svg" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="#" class="footer__bottom-link">
+                Договор оферты
+            </a>
+            <a href="#" class="footer__bottom-link">
+                Политика обработки персональных данных
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.rateyo.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

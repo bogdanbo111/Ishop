@@ -1,0 +1,149 @@
+.header {
+  margin-bottom: 80px;
+}
+
+//Up
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 122px;
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  font-weight: 700;
+}
+.menu__btn {
+  display: none;
+}
+.menu__item {
+  display: inline-block;
+}
+.menu__item + .menu__item {
+  padding-left: 50px;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+}
+.header__address {
+  margin-right: 60px;
+  width: 265px;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/adress-icon.svg ");
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -10px;
+  }
+}
+.user-list {
+  margin-right: 10px;
+  &__item {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}
+.basket {
+  position: relative;
+  &__num {
+    position: absolute;
+    font-family: 'SFProDisplay-Medium', sans-serif;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    left: 24px;
+    top: 10px;
+    background-color: #1C62CD;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+  }
+}
+
+//Hamburger
+.menu-mobile__list {
+  width: 243px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  transform: translateX(-120%);
+  transition: all .3s;
+  position: absolute;
+  z-index: 20;
+  background-color: white;
+}
+.menu-mobile__list--active {
+  transform: translateX(0%);
+}
+
+.menu__mobile-linewrapper {
+  display: none;
+}
+
+
+.menu-mobile__item {
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.menu-mobile__item:last-child {
+  font-weight: bold;
+}
+.menu-mobile__item:last-child a{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.menu-mobile__item:last-child a img{
+  bottom: 26px;
+}
+.menu-mobile__link {
+  display: block;
+  padding-left: 53px;
+  padding-top: 36px;
+  position: relative;
+}
+.menu-mobile__img {
+  position: absolute;
+  left: 11px;
+  bottom: 0;
+}
+
+
+//Bottom
+.menu-categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 53px;
+  background-color: #F0F0F4;
+  &__item {
+    position: relative;
+  }
+  &__link {
+    transition: all 0.3s;
+    font-weight: 400;
+    padding: 15px 0 14px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      left: auto;
+      right: 0;
+      bottom: -2px;
+      background-color: #1c62cd;
+      height: 3px;
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: black;
+    }
+    &:hover::before {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+}
