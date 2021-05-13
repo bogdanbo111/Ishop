@@ -1,0 +1,72 @@
+@import 'libs/font';
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    display: inline-block;
+}
+p {
+    margin: 0;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+body {
+    color: #2F3035;
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+section {
+  margin-bottom: 80px;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+button {
+    cursor: pointer;
+}
+input {
+    outline: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+$text-color: #6ba098;
+$background-color: #dfe7d5;
+
+
+@import 'blocks/header';
+@import 'blocks/banner-section';
+@import 'blocks/search';
+@import 'blocks/categories';
+@import 'blocks/products';
+@import 'blocks/footer';
+@import 'blocks/breadcrumbs';
+@import 'blocks/catalog';
+@import 'blocks/catalog-aside';
+@import 'blocks/product-card';
+@import 'blocks/media';
+
