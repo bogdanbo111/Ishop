@@ -119,6 +119,13 @@ $(document).ready(function(){
     $('.catalog__filter-btngrid').on('click', function () {
         $('.product-item__wrapper').removeClass('product-item__wrapper--list');
     });
+    
+    //Pagination list
+    $('.pagination-list__item').on('click', function (e) {
+        e.preventDefault();
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
 
     //Star Rating
     $("#rateYo").rateYo({
